@@ -1,0 +1,57 @@
+body {
+	width: 200px;
+	height: 80px;
+	display: flex;
+	/* margin: 10px 0 0 10px; */
+	font-family: Arial, sans-serif;
+}
+
+#tabCount {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+#tabCount-header {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	border-bottom: 1px solid #666;
+	width: 100%;
+	/* Make the header fill the entire width */
+}
+
+#tabCount-title {
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+#tabCount-icon {
+	font-size: 3em;
+	color: #000;
+	/* Set the foreground color (text color) as needed */
+	/* padding-left: 5px; */
+}
+
+#tabCount-body {
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 10px;
+	padding-bottom: 5px;
+}
+
+
+#footer {
+	margin-top: 15px;
+	padding-bottom: 8px;
+	/* Adjust the margin as needed */
+	text-align: left;
+}
+
+#footer a {
+	text-decoration: none;
+	color: #0070E1;
+	/* Adjust the color as needed */
+	font-weight: bold;
+}

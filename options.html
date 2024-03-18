@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Tally - Options</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style>
+    .options-form {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .title-container {
+      max-width: 800px;
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+<body>
+
+  <div class="section">
+    <div class="container">
+      <form id="colorSchemeForm" class="options-form">
+
+        <div class="title-container">
+          <h1 class="title">Tab Tally</h1>
+          <h2 class="subtitle">Options</h2>
+        </div>
+        
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label" for="bin1Color">Color for </label>
+          </div>
+
+          <div class="field-body">
+            <div class="field">
+              <p class="control">
+                <input class="input" type="number" id="bin1Min" value="0" min="0" disabled>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control"> to </p>
+            </div>
+            <div class="field">
+              <p class="control">
+                <input class="input" type="number" id="bin1Max" value="10" min="1" step="1">
+              </p>
+            </div>
+            <div class="field">
+              <p class="control">
+                <input class="input" type="color" id="bin1Color" value="#339900">
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label" for="bin2Color">Color for </label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control">
+                <input class="input" type="number" id="bin2Min" disabled>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control"> to </p>
+            </div>
+            <div class="field">
+              <p class="control">
+                <input class="input" type="number" id="bin2Max" step="1">
+              </p>
+            </div>
+            <div class="field">
+              <p class="control">
+                <input class="input" type="color" id="bin2Color" value="#99cc33">
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label" for="bin2Color">Color for </label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control">
+                <input class="input" type="number" id="bin3Min" disabled>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control"> to </p>
+            </div>
+            <div class="field">
+              <p class="control">
+                <input class="input" type="number" id="bin3Max" step="1">
+              </p>
+            </div>
+            <div class="field">
+              <p class="control">
+                <input class="input" type="color" id="bin3Color" value="#ffcc00">
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label" for="bin2Color">Color for </label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control">
+                <input class="input" type="number" id="bin4Min" disabled>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control"> to </p>
+            </div>
+            <div class="field">
+              <p class="control">
+                <input class="input" type="number" id="bin4Max" step="1">
+              </p>
+            </div>
+            <div class="field">
+              <p class="control">
+                <input class="input" type="color" id="bin4Color" value="#ff9966">
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label" for="bin2Color">Color for </label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control">
+                <input class="input" type="number" id="bin5Min" step="1">
+              </p>
+            </div>
+            <div class="field">
+              <p class="control"> to </p>
+            </div>
+            <div class="field">
+              <p class="control">
+                <input class="input" id="bin5Max" value="∞" disabled>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control">
+                <input class="input" type="color" id="bin5Color" value="#cc3300">
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="field is-horizontal">
+          <div class="field-label"></div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control">
+                <button type="button" id="saveColorScheme" class="button is-primary">Save Settings</button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <script src="background.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

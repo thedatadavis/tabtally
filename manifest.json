@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Tab Tally",
+    "version": "1.1",
+    "description": "See how many tabs you have open.",
+    "permissions": ["tabs", "storage"],
+    "action": {
+        "default_icon": {
+            "16": "icons/tabtally-16px.png",
+            "48": "icons/tabtally-48px.png",
+            "128": "icons/tabtally-128px.png"
+        },
+        "default_popup": "popup.html",
+        "default_title": "Tab Tally"
+    },
+    "icons": {
+        "16": "icons/tabtally-16px.png",
+        "48": "icons/tabtally-48px.png",
+        "128": "icons/tabtally-128px.png"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+      },
+    "content_scripts": [
+        {   
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ]
+}
+  
